@@ -5,7 +5,7 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [searchButt, setSearchButt] = useState(false);
   return (
-    <div className="w-full flex justify-between  text-white absolute  h-14 items-center px-5  z-20">
+    <div className="w-full flex justify-between bg-black bg-opacity-50 text-white fixed  h-14 items-center px-5  z-20">
       <div className="flex items-center">
         <h1 className="text-yellow-300 font-bold hover:cursor-pointer">
           Home Logo
@@ -32,11 +32,11 @@ function Navbar() {
       </div>
       <div></div>
       <div className="md:flex hidden text-sm ">
-        <button className="bg-transparent hover:bg-white hover:text-black border-2 w-20 h-8 rounded-md mx-1">
-          register
+        <button className="bg-transparent font-bold hover:text-[15px]  text-glow-yellow duration-300 w-20 h-8 rounded-md mx-1">
+          Register
         </button>
-        <button className="bg-transparent hover:bg-white hover:text-black border-2 w-20 h-8 rounded-md mx-1">
-          login
+        <button className="bg-transparent font-bold hover:text-[15px]  text-glow-yellow duration-300 w-20 h-8 rounded-md mx-1 ">
+          Login
         </button>
       </div>
       <div className="md:hidden flex flex-col  right-2 top-2 absolute">
@@ -53,11 +53,11 @@ function Navbar() {
 
         <div
           className={`${
-            toggle ? "flex" : "hidden"
-          }  flex-col bg-black rounded-lg text-yellow-300 font-bold text-sm bg-opacity-70 w-32 duration-300`}
+            toggle ? "duration-300 flex " : "hidden"
+          }  flex-col bg-black rounded-xl text-yellow-300 font-bold text-sm bg-opacity-70 w-32 mt-3`}
         >
           <button className="my-2">Login</button>
-          <button className="my-2">register</button>
+          <button className="my-2">Register</button>
         </div>
       </div>
       <div
@@ -75,7 +75,7 @@ function Navbar() {
         <input
           placeholder="search"
           type="search"
-          className="h-10 w-[180px] rounded-xl  pr-8 pl-2"
+          className="h-10 w-[180px] rounded-xl bg-gray-800 pr-2 pl-2"
         />
         <button
           className="  hover:cursor-pointer  right-20"

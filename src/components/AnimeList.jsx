@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { allAnime } from "../Datas/AnimeData";
 import { BsAlarm } from "react-icons/bs";
 import Pagination from "./Pagination";
-import { Stack } from "@mui/material";
 
 function AnimeList() {
-  const itemsPerPage = 8;
+  const itemsPerPage = 12;
   const [itemOffset, setItemOffset] = useState(0);
-  const [page, setPage] = useState(1);
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = allAnime.slice(itemOffset, endOffset);
 
@@ -74,7 +72,7 @@ function AnimeList() {
           );
         })}
       </div>
-      <div className="w-full flex justify-center text-2xl mt-10">
+      <div className="w-full flex justify-center text-xl mt-10">
         <Pagination handlePageClick={handlePageClick} pageCount={pageCount} />
       </div>
     </div>

@@ -5,8 +5,8 @@ import { BsAlarm, BsPlayCircle } from "react-icons/bs";
 
 function MainAnime() {
   return (
-    <div className="absolute w-full h-[600px]  flex justify-between items-center text-white  mt-14 z-10 ">
-      <div className=" md:w-[50%] w-[100%] md:flex flex-row justify-center">
+    <div className="absolute w-full h-[600px]  flex justify-between items-center text-white mt-5 z-10 ">
+      <div className=" md:w-[50%] w-[100%] md:flex flex-row justify-center ">
         <div className="md:w-[150px] w-full  flex flex-col items-center">
           <div className="h-[300px] w-[150px] overflow-hidden rounded-tl-2xl rounded-br-2xl">
             <img src={animeCardMain} className="w-full" />
@@ -71,7 +71,7 @@ function MainAnime() {
           </div>
         </div>
       </div>
-      <div className="w-[50%] sm:flex hidden justify-center items-center h-[600px] ">
+      <div className="w-[50%] sm:flex hidden justify-center items-center h-[600px]">
         <BsPlayCircle className="text-8xl hover:text-9xl duration-300 bg-opacity-10 cursor-pointe " />
       </div>
     </div>

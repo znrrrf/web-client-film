@@ -15,10 +15,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.bg-gradient-radial {
-  background: radial-gradient(
-    ellipse closest-side at 60% 40%,
-    transparent 10%,
-    black 120%
-  );
+@media (min-width: 641px) {
+  .bg-gradient-radial {
+    background: linear-gradient(transparent, 50%, black);
+  }
+}
+
+@media (max-width: 640px) {
+  .bg-gradient-radial {
+    background: linear-gradient(transparent, 10%, black);
+  }
+}
+
+.text-glow-yellow:hover {
+  color: yellow;
+  text-shadow: 0 0 3px yellow, 0 0 20px yellow;
 }

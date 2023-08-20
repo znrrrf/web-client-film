@@ -4,14 +4,14 @@ import Carrousel from "./components/Carrousel";
 import Navbar from "./components/Navbar";
 import AnimeList from "./components/AnimeList";
 import Pagination from "./components/Pagination";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="w-full bg-black">
-      {/* <Navbar /> */}
       <Carrousel />
       <AnimeList />
-      {/* <Pagination /> */}
+      <Footer />
     </div>
   );
 }
